@@ -12,8 +12,8 @@
 
   * Primero crea y entra a la carpeta que contrendrá el proyecto
   * Abrir la terminal 
-    - git clone  challenge-1-codigo-tecsup
-    - cd challenge-1-codigo-tecsup
+    - git clone  reto-1-codigo-tecsup
+    - cd reto-1-codigo-tecsup
     - Levantar un servidor de estáticos y correr la aplicación
 
 ## 👨‍💻 Tecnologías utilizadas 👨‍💻
