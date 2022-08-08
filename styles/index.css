@@ -252,3 +252,69 @@
 .coursers__course-item__info-description {
   margin: 0;
 }
+
+.form-contact {
+
+}
+
+.form-contact__container{
+
+}
+
+
+.form-contact__title{
+
+}
+
+.form-contact__survey{
+
+}
+
+.form-contact__survey-name{
+    width:25%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.form-contact__survey-name:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+
+.form-contact__survey-email{
+    width:25%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box
+}
+
+.form-contact__survey-email:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+
+.form-contact__survey-interested-course-label{
+
+}
+
+.form-contact__survey-interested-course-select{
+
+}
+
+.form-contact__survey-button{
+
+}
+
+
+
+
+
