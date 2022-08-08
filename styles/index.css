@@ -1,0 +1,122 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;  
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  height: 7rem;
+  background-color: #191919;
+  top: 0;
+}
+
+.header-nav {
+  width: 100%;
+  height: 100%;
+}
+
+.header-container {
+  max-width: 64rem;
+  display: flex;
+  height: 100%;
+  padding: 0 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 728px) {
+  .header-container {
+    margin: 0 auto;
+  }
+}
+
+.header-nav__link-logo {
+  width: 10rem;
+  height: auto;
+  object-fit: cover;
+}
+
+.header-nav__link-logo-container {
+  display: flex;
+} 
+
+.header-nav__list-container {
+  margin: 0 1em;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0 .5em;
+}
+
+@media (min-width: 728px) {
+  .header-nav__list-container {
+    flex-direction: row;
+    gap: 0 1em;
+  }
+}
+
+.header-nav__menu-link-container {
+  position: relative;
+}
+
+.header-nav__menu-link {
+  color: rgb(238 238 238);
+  text-decoration: none;
+  font-weight: 700;
+  position: relative;
+}
+
+.header-nav__show-name-container {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.header-nav__menu-link--normal::before {
+  content: '';
+  width: 0;
+  position: absolute;
+  height: 0.125rem;
+  bottom: -0.125rem;
+  left: 0;
+  background-color: #3D7AFD;
+  transition: width .25s ease-in-out;
+}
+
+.header-nav__menu-link--normal:hover::before {
+  width: 100%;
+}
+
+.header-nav__show-name-link {
+  color: rgb(58, 177, 241);
+  font-weight: 900;
+  opacity: 0;
+  text-decoration: none;
+  transition: 0.25s opacity;
+}
+
+.header-nav__show-name-link--second {
+  transition-delay: .25s;
+}
+
+.header-nav__menu-link--show-names:hover + .header-nav__show-name-container .header-nav__show-name-link, 
+.header-nav__show-name-container:hover .header-nav__show-name-link {
+  opacity: 1;
+}
+
+
