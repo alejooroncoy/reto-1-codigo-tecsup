@@ -119,4 +119,61 @@ body {
   opacity: 1;
 }
 
+.main {
+  width: 100%;
+}
+
+.i-hero {
+  background-image: url('../assets/img/background-hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.i-hero-container {
+  max-width: 64rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em 0;
+}
+
+.i-hero-title, .i-hero-subtitle, .i-hero-paragraph {
+  margin: 0;
+  text-align: center;
+}
+
+.i-hero-title {
+  font-size: 2rem;
+  opacity: 0;
+  animation: fade-in 1s ease-out 1 forwards;
+}
+
+.i-hero-subtitle {
+  opacity: 0;
+  font-size: 1.5rem;
+  animation: fade-in 1s .5s ease-out 1 forwards;
+}
+
+.i-hero-paragraph {
+  font-size: 1rem;
+  opacity: 0;
+  animation: fade-in 1s 1s ease-out 1 forwards;
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateY(1rem);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 
