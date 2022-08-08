@@ -270,14 +270,14 @@
           </a>
         </div>
       </section>
-      <section>
-        <div>
-          <h2>Contáctanos</h2>
-          <form>
-            <input type="text" name="name" placeholder="Nombre" />
-            <input type="email" name="phone-email" placeholder="Correo" />
-            <label for="">Curso interesado:</label>
-            <select name="" id="">
+      <section class="form-contact">
+        <div class="form-contact__container">
+          <h2 class="form-contact__title">Contáctanos</h2>
+          <form class="form-contact__survey">
+            <input class="form-contact__survey-name" type="text" name="name" placeholder="Nombre" />
+            <input class="form-contact__survey-email" type="email" name="phone-email" placeholder="Correo" />
+            <label class="form-contact__survey-interested-course-label" for="select-course">Curso interesado:</label>
+            <select class="form-contact__survey-interested-course-select"  id="select-course">
               <option value="HTML">Todos los cursos</option>
               <option value="HTML">Curso de HTML</option>
               <option value="CSS&RWD">Curso de CSS y RWD</option>
@@ -290,17 +290,18 @@
               <option value="REACT">Curso de React</option>
               <option value="PYD">Curso de Python y Django</option>
             </select>
-            <button type="submit">Registrarse</button>
+            <button class="form-contact__survey-button" type="submit">Registrarse</button>
           </form>
         </div>
       </section>
     </main>
-    <footer>
-      <nav>
-        <div>
-          <h2>
+    <footer class="footer">
+      <nav class="footer-nav">
+        <div class="footer__container">
+          <h2 class="footer-nav__copyright">
             👨‍💻 Copyright &copy; 2022
-            <a
+            <a 
+              class="footer-nav__link"
               href="https://alejooroncoy.github.io/reto-1-codigo-tecsup/"
               target="_blank"
               rel="noopener noreferrer"
