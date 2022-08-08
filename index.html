@@ -6,73 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reto - 1</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div>
-          <a href="#">
+    <header class="header">
+      <nav class="header-nav">
+        <div class="header-container">
+          <a class="header-nav__link-logo-container" href="#hero">
             <img
               src="./assets/img/first-challenge-logo.png"
-              width="781"
-              height="210"
+              width="160"
+              height="50"
+              class="header-nav__link-logo"
               alt="primer-reto-logo"
             />
           </a>
-          <ul>
-            <li><a href="#">Cursos</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Nosotros</a></li>
+          <ul class="header-nav__list-container">
+            <li>
+              <a
+                class="header-nav__menu-link header-nav__menu-link--normal"
+                href="#course"
+                >Cursos</a
+              >
+            </li>
+            <li>
+              <a
+                class="header-nav__menu-link header-nav__menu-link--normal"
+                href="#"
+                >Contacto</a
+              >
+            </li>
+            <li class="header-nav__menu-link-container">
+              <a
+                class="header-nav__menu-link header-nav__menu-link--show-names"
+                href="#"
+                >Nosotros</a
+              >
+              <ul class="header-nav__show-name-container">
+                <li>
+                  <a
+                    class="header-nav__show-name-link header-nav__show-name-link--first"
+                    href="https://www.linkedin.com/in/york-antayhua/"
+                    >@york</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="header-nav__show-name-link header-nav__show-name-link--second"
+                    href="https://github.com/alejooroncoy"
+                    >@alejo</a
+                  >
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main>
-      <article>
-        <div>
-          <h1>Primer reto</h1>
-          <h2>Escuela virtual de programación 👨‍💻</h2>
-          <p>
+    <main class="main">
+      <article id="hero" class="i-hero">
+        <div class="i-hero-container">
+          <h1 class="i-hero-title">Primer reto</h1>
+          <h2 class="i-hero-subtitle">Escuela virtual de programación 👨‍💻</h2>
+          <p class="i-hero-paragraph">
             En primer reto, nos enfocamos en enseñar desde los principios
             basicos hasta conocimientos avanzados en programación, ¡Para
             impulsar tu carrera profesional!
           </p>
         </div>
       </article>
-      <section>
-        <div>
-          <article>
-            <div>
+      <section id="course" class="coursers">
+        <div class="coursers__course-container">
+          <article class="coursers__course-item">
+            <div class="coursers__course-item__img-container">
               <img
                 src="./assets/img/courses/curso-html.jpg"
                 width="220"
                 height="100"
+                class="coursers__course-item__img-pro"
                 alt="curso-html"
               />
             </div>
-            <div>
-              <h2>Curso de HTML</h2>
-              <h6>Mundo web</h6>
-              <p>
+            <div class="coursers__course-item__info-container">
+              <h2 class="coursers__course-item__info-title">Curso de HTML</h2>
+              <h6 class="coursers__course-item__info-category">Mundo web</h6>
+              <p class="coursers__course-item__info-description">
                 En este curso aprenderás las bases del HTML moderno. Empleando
                 buenas prácticas para un código limpio y escalabre. Se realizará
                 un proyecto dondé harás tu primera estructura HTML.
               </p>
             </div>
           </article>
-          <article>
-            <div>
+          <article class="coursers__course-item">
+            <div class="coursers__course-item__img-container">
               <img
                 src="./assets/img/courses/curso-css.jpg"
                 width="220"
+                class="coursers__course-item__img-pro"
                 height="100"
                 alt="curso-css"
               />
             </div>
-            <div>
-              <h2>Curso de CSS y RWD</h2>
-              <h6>Mundo web</h6>
-              <p>
+            <div class="coursers__course-item__info-container">
+              <h2 class="coursers__course-item__info-title">
+                Curso de CSS y RWD
+              </h2>
+              <h6 class="coursers__course-item__info-category">Mundo web</h6>
+              <p class="coursers__course-item__info-description">
                 En el curso de CSS y RWD(Response Web Design), aprenderás a
                 realizar layouts con estás tecnologías, dando estilos y haciendo
                 que tus webs sean muchas más vistosas. Si terminó el curso de
@@ -80,19 +120,22 @@
               </p>
             </div>
           </article>
-          <article>
-            <div>
+          <article class="coursers__course-item">
+            <div class="coursers__course-item__img-container">
               <img
                 src="./assets/img/courses/curso-algoritmos.jpg"
                 width="220"
+                class="coursers__course-item__img-pro"
                 height="100"
                 alt="curso-algoritmos"
               />
             </div>
-            <div>
-              <h2>Curso de Algoritmos en la Programación</h2>
-              <h6>Programación</h6>
-              <p>
+            <div class="coursers__course-item__info-container">
+              <h2 class="coursers__course-item__info-title">
+                Curso de Algoritmos en la Programación
+              </h2>
+              <h6 class="coursers__course-item__info-category">Programación</h6>
+              <p class="coursers__course-item__info-description">
                 En este curso aprenderás una parte esencial para empezar en el
                 mundo de la programación como son los algoritmos. Practicando
                 lógica de programación, modelos de flujos con ejercicios
@@ -100,19 +143,24 @@
               </p>
             </div>
           </article>
-          <article>
-            <div>
+          <article class="coursers__course-item">
+            <div class="coursers__course-item__img-container">
               <img
                 src="./assets/img/courses/curso-js.jpg"
                 width="220"
+                class="coursers__course-item__img-pro"
                 height="100"
                 alt="curso-js"
               />
             </div>
-            <div>
-              <h2>Curso de Javascript Fullstack: Cliente y Node.js</h2>
-              <h6>Programación y Mundo Web</h6>
-              <p>
+            <div class="coursers__course-item__info-container">
+              <h2 class="coursers__course-item__info-title">
+                Curso de Javascript Fullstack: Cliente y Node.js
+              </h2>
+              <h6 class="coursers__course-item__info-category">
+                Programación y Mundo Web
+              </h6>
+              <p class="coursers__course-item__info-description">
                 En este curso aprendrás Javascript desde la base hasta volverte
                 todo un avanzado. Tanto del lado del cliente como del servidor.
                 Realizarás un proyecto conectando estos dos lados creando así
@@ -120,19 +168,22 @@
               </p>
             </div>
           </article>
-          <article>
-            <div>
+          <article class="coursers__course-item">
+            <div class="coursers__course-item__img-container">
               <img
                 src="./assets/img/courses/curso-react.jpg"
                 width="220"
+                class="coursers__course-item__img-pro"
                 height="100"
                 alt="curso-react"
               />
             </div>
-            <div>
-              <h2>Curso de React</h2>
-              <h6>Programación y Mundo Web</h6>
-              <p>
+            <div class="coursers__course-item__info-container">
+              <h2 class="coursers__course-item__info-title">Curso de React</h2>
+              <h6 class="coursers__course-item__info-category">
+                Programación y Mundo Web
+              </h6>
+              <p class="coursers__course-item__info-description">
                 Aprenderás una de las librerías más utilizadas en la actual web
                 como lo es React. Se verá desde crear nuestro primer componente
                 hasta una aplicación web, conectando diferentes servicios y
@@ -141,19 +192,24 @@
               </p>
             </div>
           </article>
-          <article>
-            <div>
+          <article class="coursers__course-item">
+            <div class="coursers__course-item__img-container">
               <img
                 src="./assets/img/courses/curso-python-django.jpg"
                 width="220"
+                class="coursers__course-item__img-pro"
                 height="100"
                 alt="curso-python-django"
               />
             </div>
-            <div>
-              <h2>Curso de Python y Django</h2>
-              <h6>Programación y Mundo Web</h6>
-              <p>
+            <div class="coursers__course-item__info-container">
+              <h2 class="coursers__course-item__info-title">
+                Curso de Python y Django
+              </h2>
+              <h6 class="coursers__course-item__info-category">
+                Programación y Mundo Web
+              </h6>
+              <p class="coursers__course-item__info-description">
                 En este curso aprenderás desde lo básico de python, hasta lo más
                 avanzado. Finalizando con el dominio de una de las librerías más
                 empleadas en Python, Django.
