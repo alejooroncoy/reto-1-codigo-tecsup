@@ -307,6 +307,9 @@
 }
 
 .form-contact__survey-interested-course-select{
+    width: 25%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
 
 }
 
