@@ -58,7 +58,7 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0 .5em;
+  gap: .3em 0;
 }
 
 @media (min-width: 728px) {
