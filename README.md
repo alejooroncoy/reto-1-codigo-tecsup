@@ -6,7 +6,7 @@
 
 ## 📸 Foto web 📸
 
-  Próximamente...
+  ![Foto web](./assets/img/photo_web.jpg)
 
 ## 🦄 Instalación 🦄
 
