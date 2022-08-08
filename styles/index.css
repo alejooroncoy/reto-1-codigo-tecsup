@@ -176,4 +176,63 @@ body {
   }
 }
 
+.coursers {
+  width: 100%;
+  padding: 3em;
+}
 
+.coursers__course-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 3em 0;
+}
+
+@media (min-width: 728px) {
+  .coursers__course-container {
+    max-width: 64rem;
+    margin: 0 auto;
+    gap: 3em;
+  }
+}
+
+.coursers__course-item {
+  width: 100%;
+  border: 4px solid black;
+  border-radius: .15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  gap: 1em 0;
+  transition: .25s transform;
+}
+
+.coursers__course-item:hover {
+  transform: scale(1.05);
+}
+
+.coursers__course-item__info-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em 0;
+}
+
+.coursers__course-item__info-title {
+  text-align: center;
+  margin: 0;
+}
+
+.coursers__course-item__info-category {
+  text-align: center;
+  margin: 0;
+}
+
+.coursers__course-item__info-description {
+  margin: 0;
+  text-align: center;
+}
+
+.coursers__course-item__info-description {
+  margin: 0;
+}
