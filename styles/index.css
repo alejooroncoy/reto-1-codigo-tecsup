@@ -217,6 +217,9 @@
   align-items: center;
   padding: 1em;
   gap: 1em 0;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
   transition: .25s transform;
 }
 
