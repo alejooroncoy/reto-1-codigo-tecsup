@@ -65,17 +65,17 @@
             />
           </a>
           <ul class="header-nav__menu-list-container">
-            <li>
+            <li class="header-nav__menu-link-container">
               <a
                 class="header-nav__menu-link header-nav__menu-link--normal"
                 href="#course"
                 >Cursos</a
               >
             </li>
-            <li>
+            <li class="header-nav__menu-link-container">
               <a
                 class="header-nav__menu-link header-nav__menu-link--normal"
-                href="#"
+                href="#contact"
                 >Contacto</a
               >
             </li>
@@ -86,14 +86,14 @@
                 >Nosotros</a
               >
               <ul class="header-nav__show-name-container">
-                <li>
+                <li class="header-nav__show-name-item">
                   <a
                     class="header-nav__show-name-link header-nav__show-name-link--first"
                     href="https://www.linkedin.com/in/york-antayhua/"
                     >@york</a
                   >
                 </li>
-                <li>
+                <li class="header-nav__show-name-item">
                   <a
                     class="header-nav__show-name-link header-nav__show-name-link--second"
                     href="https://github.com/alejooroncoy"
@@ -270,14 +270,35 @@
           </a>
         </div>
       </section>
-      <section class="form-contact">
+      <section id="contact" class="form-contact">
         <div class="form-contact__container">
           <h2 class="form-contact__title">Contáctanos</h2>
           <form class="form-contact__survey">
-            <input class="form-contact__survey-name" type="text" name="name" placeholder="Nombre" maxlength="255" required/>
-            <input class="form-contact__survey-email" type="email" name="phone-email" placeholder="Correo" required/>
-            <label class="form-contact__survey-interested-course-label" for="select-course">Curso interesado:</label>
-            <select class="form-contact__survey-interested-course-select"  id="select-course" required>
+            <input
+              class="form-contact__survey-name"
+              type="text"
+              name="name"
+              placeholder="Nombre"
+              maxlength="255"
+              required
+            />
+            <input
+              class="form-contact__survey-email"
+              type="email"
+              name="phone-email"
+              placeholder="Correo"
+              required
+            />
+            <label
+              class="form-contact__survey-interested-course-label"
+              for="select-course"
+              >Curso interesado:</label
+            >
+            <select
+              class="form-contact__survey-interested-course-select"
+              id="select-course"
+              required
+            >
               <option value="ALL THE COURSES">Todos los cursos</option>
               <option value="HTML">Curso de HTML</option>
               <option value="CSS&RWD">Curso de CSS y RWD</option>
@@ -290,7 +311,9 @@
               <option value="REACT">Curso de React</option>
               <option value="PYD">Curso de Python y Django</option>
             </select>
-            <button class="form-contact__survey-button" type="submit">Registrarse</button>
+            <button class="form-contact__survey-button" type="submit">
+              Registrarse
+            </button>
           </form>
         </div>
       </section>
@@ -300,7 +323,7 @@
         <div class="footer__container">
           <h2 class="footer-nav__copyright">
             👨‍💻 Copyright &copy; 2022
-            <a 
+            <a
               class="footer-nav__link"
               href="https://alejooroncoy.github.io/reto-1-codigo-tecsup/"
               target="_blank"

@@ -14,7 +14,7 @@
 
 .header {
   width: 100%;
-  position: sticky;
+  position: fixed;
   left: 0;
   z-index: 1;
   height: 7rem;
@@ -81,10 +81,19 @@
 
 .header-nav__show-name-container {
   width: 100%;
+  transition: .5s height;
   list-style: none;
+  border-radius:  0 0 .3rem .3rem;
+  visibility: hidden;
   padding: 0;
   margin: 0;
+  height: 0;
   position: absolute;
+}
+
+.header-nav__show-name-item {
+  display: flex;
+  justify-content: center;
 }
 
 .header-nav__menu-link--normal::before {
@@ -103,20 +112,28 @@
 }
 
 .header-nav__show-name-link {
-  color: rgb(58, 177, 241);
+  color: transparent;
   font-weight: 900;
   opacity: 0;
   text-decoration: none;
-  transition: 0.25s opacity;
 }
 
+.header-nav__show-name-link--first {
+  transition: 0.25s .5s opacity, 0.5s 0 color;
+}
 .header-nav__show-name-link--second {
-  transition-delay: .25s;
+  transition: 0.25s .75s opacity, 0.5s 0 color;
 }
 
-.header-nav__menu-link--show-names:hover + .header-nav__show-name-container .header-nav__show-name-link, 
-.header-nav__show-name-container:hover .header-nav__show-name-link {
+.header-nav__menu-link-container:hover .header-nav__show-name-link {
   opacity: 1;
+  color: rgb(58, 177, 241);
+}
+
+.header-nav__menu-link-container:hover .header-nav__show-name-container {
+  height: 200%;
+  background-color: white;
+  visibility: visible;
 }
 
 .main {
@@ -132,7 +149,6 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .i-hero-container {
@@ -191,7 +207,13 @@
 
 .coursers {
   width: 100%;
-  padding: 3em;
+  padding: 3em 1em;
+}
+
+@media (min-width: 728px) {
+  .coursers {
+    padding: 3em;
+  }
 }
 
 .coursers__course-container {
@@ -215,7 +237,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
+  padding: 0 0 1em 0;
   gap: 1em 0;
   text-decoration: none;
   color: black;
@@ -229,6 +251,7 @@
 
 .coursers__course-item__info-container {
   display: flex;
+  padding: 0 1em;
   align-items: center;
   flex-direction: column;
   gap: 1em 0;
@@ -252,6 +275,17 @@
 .coursers__course-item__info-description {
   margin: 0;
 }
+
+.coursers__course-item__img-container {
+  width: 100%;
+}
+
+.coursers__course-item__img-pro {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
 
 .form-contact {
 
